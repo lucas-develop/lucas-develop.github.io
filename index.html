@@ -3,34 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Engineering Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Data Engineering Projects</h1>
-        <p>Showcasing my work in data pipelines, ETL processes, and data analysis</p>
-    </header>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <h2>Lucas</h2>
+                <p class="title">Data Engineering Student</p>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> HOME</a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i> ACTIVITIES</a></li>
+                    <li><a href="#"><i class="fas fa-tags"></i> TOPICS</a></li>
+                    <li><a href="#"><i class="fas fa-timeline"></i> TIMELINE</a></li>
+                    <li><a href="#"><i class="fas fa-file"></i> CV</a></li>
+                </ul>
+            </nav>
 
-    <main>
-        <section class="project">
-            <h2>NBA Data Analysis</h2>
-            <p>Analyzed NBA player statistics using Python and Pandas</p>
-            <a href="nba.csv" class="btn">View Dataset</a>
-        </section>
+            <div class="social-links">
+                <a href="#"><i class="fas fa-moon"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fas fa-rss"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </aside>
 
-        <section class="project">
-            <h2>MRTS Sales Analysis</h2>
-            <p>Processed and analyzed monthly retail trade survey data</p>
-            <a href="mrts_2020-2010.csv" class="btn">View Dataset</a>
-        </section>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </header>
 
-        <section class="project">
-            <h2>SQL Data Pipeline</h2>
-            <p>Built an ETL pipeline to load MRTS data into SQL database</p>
-            <a href="mrts_sql_install.py" class="btn">View Code</a>
-        </section>
-    </main>
+            <section class="about">
+                <h1>About Me</h1>
+                <p>I'm a Data Engineering student passionate about building efficient data pipelines and analyzing complex datasets. My focus lies in developing robust ETL processes and creating meaningful insights from data.</p>
+                
+                <p>I work with various technologies including Python, SQL, and data visualization tools. My projects demonstrate my ability to handle large datasets and implement effective data engineering solutions.</p>
+            </section>
 
+            <section class="latest-activity">
+                <h2>Latest Activity</h2>
+                <div class="activity-card">
+                    <h3>NBA Data Analysis Project</h3>
+                    <p>Developed a comprehensive analysis of NBA player statistics using Python and Pandas, implementing advanced data processing techniques.</p>
+                    <div class="activity-meta">
+                        <span><i class="far fa-clock"></i> July 2023</span>
+                        <span><i class="fas fa-tag"></i> Data Analysis</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <section class="recently-updated">
+                <h3>Recently Updated</h3>
+                <ul>
+                    <li>NBA Data Analysis Project</li>
+                    <li>MRTS Sales Analysis</li>
+                    <li>SQL Data Pipeline</li>
+                </ul>
+            </section>
+
+            <section class="trending-topics">
+                <h3>Trending Topics</h3>
+                <div class="topics">
+                    <span class="topic">Python</span>
+                    <span class="topic">SQL</span>
+                    <span class="topic">Data Analysis</span>
+                    <span class="topic">ETL</span>
+                    <span class="topic">Pandas</span>
+                </div>
+            </section>
+        </aside>
+    </div>
 </body>
 </html>
